@@ -1,0 +1,5 @@
+使用方式：
+cyberplayer.js和cyberplayer.flash.swf放在同一目录，一般只需要引入cyberplayer.js就可以了。
+当需要在pc上用h5 video播放hls视频的时候，才需要引入videojs中的文件。具体可见demo中的例子。
+帮助文档地址：https://cloud.baidu.com/doc/MCT/Web-SDK.html
+demo展示地址：http://cyberplayer.bcelive.com/demo/index.html
