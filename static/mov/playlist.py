@@ -10,14 +10,14 @@ def getfilename():
         k.sort()
         return k
 
-for i in range(0,23):
-    f = open('yes_date/'+'play'+i.zfill(2)+'.m3u8','w')
+for i in range(0,24):
+    f = open(yes_date+'/'+'play'+str(i).zfill(2)+'.m3u8','w')
     f.write('#EXTM3U'+'\n'+'#EXT-X-VERSION:3'+'\n'+'#EXT-X-TARGETDURATION:2'+'\n'+'#EXT-X-MEDIA-SEQUENCE:0'+'\n')
     f.close()
     filename = getfilename()
     for j in filename:
-        f = open('yes_date/'+'play'+i.zfill(2)+'.m3u8','a')
-        if  j[:2] == i.zfill(2):
+        f = open(yes_date+'/'+'play'+str(i).zfill(2)+'.m3u8','a')
+        if  j[:2] == str(i).zfill(2):
             f.write('#EXTINF:2.000000,'+'\n')
             f.write(j+'\n')
     f.write('#EXT-X-ENDLIST'+'\n')
