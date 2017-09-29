@@ -19,5 +19,6 @@ from cctv_ffmpeg import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^his/', views.his),
     url(r'^', views.index),
 ]
